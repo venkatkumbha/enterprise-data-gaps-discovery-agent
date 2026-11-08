@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "enterprise-data-gaps": {
+      "command": "ABSOLUTE_PATH_TO_REPO\\.venv\\Scripts\\python.exe",
+      "args": ["-m", "gap_agent.mcp.database_server"],
+      "env": {
+        "PYTHONPATH": "ABSOLUTE_PATH_TO_REPO\\backend",
+        "SYSTEMS_DIR": "ABSOLUTE_PATH_TO_REPO\\data\\systems",
+        "AUDIT_LOG_PATH": "ABSOLUTE_PATH_TO_REPO\\logs\\mcp_audit.jsonl"
+      }
+    }
+  }
+}

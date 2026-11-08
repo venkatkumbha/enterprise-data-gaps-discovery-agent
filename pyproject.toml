@@ -1,0 +1,32 @@
+[project]
+name = "enterprise-data-gaps-discovery-agent"
+version = "0.1.0"
+description = "Home-lab agent that finds identity, completeness, semantic, and freshness gaps across synthetic enterprise systems."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "mcp>=1.9.0",
+  "fastapi>=0.115.0",
+  "uvicorn>=0.32.0",
+  "langgraph>=0.2.60",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+]
+
+[project.scripts]
+generate-systems = "gap_agent.synthetic.generate:main"
+db-mcp = "gap_agent.mcp.database_server:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["backend"]
+
+[tool.pytest.ini_options]
+pythonpath = ["backend"]
+testpaths = ["tests"]

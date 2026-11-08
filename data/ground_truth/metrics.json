@@ -1,0 +1,47 @@
+{
+  "project": "Enterprise Data Gaps Discovery Agent",
+  "crm_customers": 19,
+  "erp_customers": 19,
+  "orphan_orders": 2,
+  "erp_orders": 14,
+  "erp_null_emails": 5,
+  "shared_emails": [
+    {
+      "email": "ap@northwind.example",
+      "customer_count": 2
+    }
+  ],
+  "orphan_contacts": 1,
+  "warehouse_only_customers": 1,
+  "crm_ids_missing_from_warehouse": [
+    103,
+    118
+  ],
+  "erp_tables_absent_from_catalog": [
+    "legacy_cust_dump"
+  ],
+  "status_encodings": {
+    "crm": [
+      "Active",
+      "Inactive"
+    ],
+    "erp": [
+      "A",
+      "I"
+    ],
+    "warehouse": [
+      "1",
+      "0"
+    ]
+  },
+  "as_of": {
+    "crm_updated_at": "2026-11-01",
+    "erp_last_modified": "2026-11-02",
+    "warehouse_as_of_date": "2026-09-20"
+  },
+  "name_variants_customer_101": [
+    "Acme Corp",
+    "Acme Corporation",
+    "ACME CORP"
+  ]
+}
