@@ -28,7 +28,7 @@ app.add_middleware(
 
 
 class DiscoverRequest(BaseModel):
-    focus: str = Field(default="customers", max_length=80)
+    focus: str = Field(default="bss_oss_party_and_service", max_length=80)
 
 
 @app.get("/api/health")
@@ -49,5 +49,5 @@ def systems() -> dict:
 @app.post("/api/discover")
 def discover(body: DiscoverRequest | None = None) -> dict:
     """Run the supervisor graph once and return its report."""
-    focus = body.focus if body else "customers"
+    focus = body.focus if body else "bss_oss_party_and_service"
     return run_discovery(focus=focus)

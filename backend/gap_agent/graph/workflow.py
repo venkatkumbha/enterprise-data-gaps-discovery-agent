@@ -58,7 +58,7 @@ def build_graph():
     return graph.compile()
 
 
-def run_discovery(focus: str = "customers") -> dict:
+def run_discovery(focus: str = "bss_oss_party_and_service") -> dict:
     """Execute one full pass and return the report, findings, trace, and inventory."""
     result = build_graph().invoke(
         {

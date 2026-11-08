@@ -12,7 +12,7 @@ export async function runDiscovery() {
   const response = await fetch("/api/discover", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ focus: "customers" }),
+    body: JSON.stringify({ focus: "bss_oss_party_and_service" }),
   });
   if (!response.ok) {
     throw new Error(`Discovery failed (${response.status})`);

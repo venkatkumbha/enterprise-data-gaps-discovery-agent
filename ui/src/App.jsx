@@ -50,10 +50,10 @@ function App() {
     <div className="page">
       <header className="top">
         <div>
-          <p className="eyebrow">Home lab · read-only tools · LangGraph</p>
+          <p className="eyebrow">Telco BSS/OSS · read-only tools · LangGraph</p>
           <h1>Enterprise Data Gaps Discovery Agent</h1>
           <p className="lede">
-            Four specialists compare a synthetic CRM, ERP, and warehouse. Every finding keeps the query and the rows that support it.
+            Four specialists compare synthetic BSS and OSS systems: Customer Management, Catalog, Orders, Billing, Service Inventory, Resources, Assurance, and Analytics. Every finding keeps the query and the rows that support it.
           </p>
         </div>
         <button className="run" type="button" onClick={onRun} disabled={running}>
@@ -69,7 +69,7 @@ function App() {
         ) : (
           systems.map((system) => (
             <article key={system.name} className="system-card">
-              <h2>{system.name}</h2>
+              <h2>{system.name.replaceAll("_", " ")}</h2>
               <p>{(system.tables || []).join(" · ")}</p>
             </article>
           ))
