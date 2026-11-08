@@ -58,7 +58,9 @@ On macOS or Linux, use `python -m venv .venv`, install with `pip install -e ".[d
 
 ## LinkedIn
 
-The short post for this project is [docs/linkedin.md](docs/linkedin.md). Add a repository link there only after this folder is public.
+The short post for this project is [docs/linkedin.md](docs/linkedin.md). Public repository:
+
+https://github.com/venkatkumbha/enterprise-data-gaps-discovery-agent
 
 ## What this does not claim
 

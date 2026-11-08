@@ -1,6 +1,10 @@
 # LinkedIn
 
-Paste the article into LinkedIn’s article editor. Paste the feed post on your profile and attach the article. Add a repository URL only after the code is public. Do not describe this as a scan of a real company’s data.
+Paste the article into LinkedIn’s article editor. Paste the feed post on your profile and attach the article. The public repository is:
+
+https://github.com/venkatkumbha/enterprise-data-gaps-discovery-agent
+
+Do not describe this as a scan of a real company’s data.
 
 ## Article
 
@@ -20,6 +24,8 @@ One run reports the gaps on purpose: orphan orders, a shared email, a customer r
 
 This is a lab with a few dozen rows, not a client dataset. The point is the design. The agent does not get a connection string. A finding without evidence does not count.
 
+Code: https://github.com/venkatkumbha/enterprise-data-gaps-discovery-agent
+
 If you are taking an AI pilot into a real process, which shows up first: identity that does not match, extracts that are stale, or agents that can see more than they should?
 
 ## Feed post
@@ -33,5 +39,7 @@ A React page calls a Python API. LangGraph runs four specialists across a synthe
 One run shows orphan orders, a shared email, status stored three ways, a shadow table, and a warehouse extract 42 days behind CRM.
 
 It is a lab, not a client dataset. The design is the point: evidence, and a hard boundary on what the agent can touch.
+
+Code: https://github.com/venkatkumbha/enterprise-data-gaps-discovery-agent
 
 Which gap shows up first in your estate?
